@@ -19,6 +19,21 @@
 
 ![image](https://github.com/benedict04/pes_pd/assets/109859485/41557eaf-1ddb-453f-810d-a64102cdc5cf)
 
+## RTL to GDS flow
+
+![image](https://github.com/benedict04/pes_pd/assets/109859485/92a7b36b-4364-42a1-9679-e9c3d0974ce2)
+
+- synthesis : conert RTL to circuit out of the components from standard cell library
+- Floor planning/ Power Planning : 1) Chip Floor-Planning partitions chip die between different system building blocks and place the input/output pads.
+                                   2) Macro Floor-Planning is looking out for dimensions, pin locations and rows definitions.
+                                   3) Power Planning is constructing power network. Power is supplied through metal straps.
+- Placement : Place the cells on the floorplan row, alligned with sites
+- Clocktree Synthesis : To deliver clock to all sequential elements. They deliver in minimum skew and a good shape.
+- Routing - Implement interconnect using available metal layers. PDK defines width and space of metal layers.
+            1) Global Routing : Generating routing guides
+            2) Detailed routing : Uses Global routing guides to implement the actual wiring.
+- signoff : physical verifications such as DRC and LVS. Timing verifications such as Static Timimg Analysis.
+  
 
 
   

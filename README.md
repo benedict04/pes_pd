@@ -33,7 +33,11 @@
             1) Global Routing : Generating routing guides
             2) Detailed routing : Uses Global routing guides to implement the actual wiring.
 - signoff : physical verifications such as DRC and LVS. Timing verifications such as Static Timimg Analysis.
-  
+
+## OpenLane
+
+![image](https://github.com/benedict04/pes_pd/assets/109859485/03906a7e-f942-42ab-9118-aeaafdae8d2e)
+
 
 
   

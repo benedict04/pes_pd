@@ -49,6 +49,16 @@
 ### calculating flop ratio
 
 
+## Utilization Factor and aspect ratio
+
+![image](https://github.com/benedict04/pes_pd/assets/109859485/2f49a57a-8e52-4117-a213-f1f024b59ef5)
+
+![image](https://github.com/benedict04/pes_pd/assets/109859485/30d0e337-f3e4-47b9-9824-079b152f7259)
+
+## preplacemenet of cells
+
+![image](https://github.com/benedict04/pes_pd/assets/109859485/73217a11-48a8-43d1-bebd-54e2402216a2)
+
 
 
 

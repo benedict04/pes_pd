@@ -38,6 +38,16 @@
 
 ![image](https://github.com/benedict04/pes_pd/assets/109859485/03906a7e-f942-42ab-9118-aeaafdae8d2e)
 
+### Design 
+
+![image](https://github.com/benedict04/pes_pd/assets/109859485/b53edcb9-1f5e-4475-ba99-50c93928ca09)
+
+### synthesis
+
+![image](https://github.com/benedict04/pes_pd/assets/109859485/e4dcfd8c-7d47-4560-a99e-e0fa14d57723)
+
+
+
 
 
   

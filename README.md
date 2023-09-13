@@ -46,6 +46,10 @@
 
 ![image](https://github.com/benedict04/pes_pd/assets/109859485/e4dcfd8c-7d47-4560-a99e-e0fa14d57723)
 
+### calculating flop ratio
+
+
+
 
 
 

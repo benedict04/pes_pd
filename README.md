@@ -61,7 +61,11 @@
 
 - Ip's or blocks has user defined locations and hence are placed in chip before automated placement-and-routing and are called pre-placed cells.
 
+## decoupling capacitors
 
+![image](https://github.com/benedict04/pes_pd/assets/109859485/2691d6a5-75c0-441e-a2a2-1431d2fc56bb)
+
+![image](https://github.com/benedict04/pes_pd/assets/109859485/2c7130bb-22a9-4d54-900b-67f6dd3f540e)
 
 
 

@@ -59,6 +59,8 @@
 
 ![image](https://github.com/benedict04/pes_pd/assets/109859485/73217a11-48a8-43d1-bebd-54e2402216a2)
 
+- Ip's or blocks has user defined locations and hence are placed in chip before automated placement-and-routing and are called pre-placed cells.
+
 
 
 

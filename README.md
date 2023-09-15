@@ -104,4 +104,21 @@
 - Library determines width, height, delay and required conditions of logic .
 - It also tells at what condition flipflop send input and emits output.
 - size of cells determines parameter such as delay , resistance etc.
-  
+
+ ### optimization of placement
+
+ ![image](https://github.com/benedict04/pes_pd/assets/109859485/fa115097-72be-450c-99e9-ad91571c4cec)
+
+ - We use buffers also known as repeaters to maintain signal integrity.
+ - Usually when distance from sender to receiver block is more on the basis of slew analysis buffers are used.
+
+## LABS
+
+### Placement
+
+![rr  Running  - Oracle VM VirtualBox 14-09-2023 15_01_09](https://github.com/benedict04/pes_pd/assets/109859485/532095d2-23bd-4d35-b176-2b67507904a6)
+
+![rr  Running  - Oracle VM VirtualBox 14-09-2023 15_12_08](https://github.com/benedict04/pes_pd/assets/109859485/bc62e2d7-4f02-43b5-b402-b88761f9d6ce)
+
+![rr  Running  - Oracle VM VirtualBox 14-09-2023 15_14_26](https://github.com/benedict04/pes_pd/assets/109859485/ffc14c20-ea0e-4bc2-8eac-69b445c30f49)
+

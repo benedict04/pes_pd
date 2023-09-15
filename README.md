@@ -63,11 +63,45 @@
 
 ## decoupling capacitors
 
+- while switching from logic 1 to logic 0 charge in capacitor will be discharged current will be handled by Vss.
+- During switching action decoupling capacitor will send current to the charges.
+
 ![image](https://github.com/benedict04/pes_pd/assets/109859485/2691d6a5-75c0-441e-a2a2-1431d2fc56bb)
 
 ![image](https://github.com/benedict04/pes_pd/assets/109859485/2c7130bb-22a9-4d54-900b-67f6dd3f540e)
 
+## power planning
+
+![image](https://github.com/benedict04/pes_pd/assets/109859485/4b3556dc-3815-4f48-aa4d-a2358d3fee42)
+
+### after inserting an inverter
+
+![image](https://github.com/benedict04/pes_pd/assets/109859485/82b71cdb-93ad-45aa-b730-47576ef5634b)
+
+![image](https://github.com/benedict04/pes_pd/assets/109859485/96ce83d8-305d-44a2-8143-27887348a939)
+
+- multiple power supplies solves the problem of ground bounce and voltage drop.
+
+## pin placement
+
+![image](https://github.com/benedict04/pes_pd/assets/109859485/5eb4efd5-190c-414b-9c66-57e038168828)
 
 
+![image](https://github.com/benedict04/pes_pd/assets/109859485/705f5573-63d1-4227-90a1-1115b8660f34)
 
+## LABS
+
+### floorplanning
+
+![image](https://github.com/benedict04/pes_pd/assets/109859485/ec319ba3-ff0c-457a-b6a4-51a917098e8e)
+
+![image](https://github.com/benedict04/pes_pd/assets/109859485/c4bcfadc-24f1-499b-868e-80bcafbdfec4)
+
+## Netlist biniding
+
+![image](https://github.com/benedict04/pes_pd/assets/109859485/d0e9b8eb-f0cf-40a4-8b55-d2e7c690154b)
+
+- Library determines width, height, delay and required conditions of logic .
+- It also tells at what condition flipflop send input and emits output.
+- size of cells determines parameter such as delay , resistance etc.
   

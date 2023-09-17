@@ -122,3 +122,9 @@
 
 ![rr  Running  - Oracle VM VirtualBox 14-09-2023 15_14_26](https://github.com/benedict04/pes_pd/assets/109859485/ffc14c20-ea0e-4bc2-8eac-69b445c30f49)
 
+## Inputs for cell design flow
+
+![image](https://github.com/benedict04/pes_pd/assets/109859485/d4782a48-dabc-4c21-8c39-c5f2b8ca84e1)
+
+![image](https://github.com/benedict04/pes_pd/assets/109859485/361de1f0-68a4-4a83-81e2-aaf120ae127f)
+

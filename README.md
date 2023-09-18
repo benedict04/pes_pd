@@ -186,3 +186,5 @@ The 16-mask CMOS process consists of the following steps:
 + These rules are essential for maintaining manufacturability and ensuring that the final ICs can be fabricated without defects.
 + The design rules used by Magic's design rule checker come entirely from the technology file.
 
+  ##L
+

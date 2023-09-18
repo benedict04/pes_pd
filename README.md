@@ -142,3 +142,31 @@
 ![image](https://github.com/benedict04/pes_pd/assets/109859485/cd25ef57-20b1-40e1-be2c-12aec347e43a)
 
 ![image](https://github.com/benedict04/pes_pd/assets/109859485/98c4bef9-2417-4229-a392-a7a33d463ce4)
+
+
+## Labs 
+
+![image](https://github.com/benedict04/pes_pd/assets/109859485/3633ab62-b42e-44d2-b8be-9bd1503583d8)
+
+### 16 Mask CMOS Fabrication
+The 16-mask CMOS process consists of the following steps:
+1. Selection of subtrate: Secting the body/substrate material
+2. Creating active region for transistors: Isolation between active region pockets by SiO2 and Si3N4 deposition followed by photolithography and etching
+3. N-well and P-well formation: Ion implanation by Boron for P-well and by Phosphorous for N-well formation
+4. Formation of gate terminal: NMOS and PMOS gates formed by photolithography techniques
+5. LDD (lightly doped drain) formation: LDD formed to prevent hot electron effect
+6. Source & drain formation: Screen oxide added to avoid channelling during implants followed by Aresenic implantation and annealing
+7. Local interconnect formation: Removal of screen oxide by HF etching. Deposition of Ti for low resistant contacts
+8. Higher level metal formation: CMP for planarization followed by TiN and Tungsten deposition. Top SiN layer for chip protection
+
+## Labs to create standard cell design
+
+![rr  Running  - Oracle VM VirtualBox 14-09-2023 16_40_45](https://github.com/benedict04/pes_pd/assets/109859485/409a97d2-8075-4348-9f9a-9b3f45cafaad)
+
+![rr  Running  - Oracle VM VirtualBox 14-09-2023 17_12_11](https://github.com/benedict04/pes_pd/assets/109859485/3e1cc8aa-4b31-4857-972d-4c70d768dd8c)
+
+![rr  Running  - Oracle VM VirtualBox 14-09-2023 17_21_17](https://github.com/benedict04/pes_pd/assets/109859485/ae60757e-3a11-4066-91f3-9c4243ac0185)
+
+![rr  Running  - Oracle VM VirtualBox 14-09-2023 17_21_55](https://github.com/benedict04/pes_pd/assets/109859485/c9e2157f-510a-493f-a403-cffa0bc9a96c)
+
+![rr  Running  - Oracle VM VirtualBox 14-09-2023 17_35_03](https://github.com/benedict04/pes_pd/assets/109859485/6bf7379d-9c69-407e-96da-cf15d5bb4644)

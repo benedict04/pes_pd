@@ -170,3 +170,5 @@ The 16-mask CMOS process consists of the following steps:
 ![rr  Running  - Oracle VM VirtualBox 14-09-2023 17_21_55](https://github.com/benedict04/pes_pd/assets/109859485/c9e2157f-510a-493f-a403-cffa0bc9a96c)
 
 ![rr  Running  - Oracle VM VirtualBox 14-09-2023 17_35_03](https://github.com/benedict04/pes_pd/assets/109859485/6bf7379d-9c69-407e-96da-cf15d5bb4644)
+
+![rr  Running  - Oracle VM VirtualBox 14-09-2023 17_45_27](https://github.com/benedict04/pes_pd/assets/109859485/c41199a6-4cee-40b2-96fa-0e50c53e9fdd)

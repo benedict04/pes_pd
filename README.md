@@ -192,7 +192,47 @@ The 16-mask CMOS process consists of the following steps:
 
 ### convert std magic layout to std lef
 
+![image](https://github.com/benedict04/pes_pd/assets/109859485/a2fd981b-e7c4-4107-b488-5a97a8495299)
+
+#### Setting grid values using above file info
+
+![image](https://github.com/benedict04/pes_pd/assets/109859485/ed980681-806f-4131-871e-3407832445ee)
+
+#### Layout view after setting grid info
+
+![image](https://github.com/benedict04/pes_pd/assets/109859485/324f69b3-9d65-479c-9f3d-4c53fc49f3c5)
+
+## LEF Generation
+
+![image](https://github.com/benedict04/pes_pd/assets/109859485/8b4d77c0-af39-4226-807b-edce960a3bf0)
+
+![image](https://github.com/benedict04/pes_pd/assets/109859485/67c7a953-af33-43f7-a9f1-5f961757725e)
+
+### Generated lef file
+
+![image](https://github.com/benedict04/pes_pd/assets/109859485/76b956aa-103e-486b-9afe-8c7f886a612d)
+
+```
+cp sky130_vsdinv.lef /home/vsduser/Desktop/work/tools/openlane_working_dir/designs/picorv32a/src/
+cp sky130_fd_sc_hd__* /home/vsduser/Desktop/work/tools/openlane_working_dir/designs/picorv32a/src/
+config.tcl
 ```
 
+#### Steps to execute
 
+- design run
+- synthesis
 
+  ![image](https://github.com/benedict04/pes_pd/assets/109859485/b715b9bf-d249-4ef5-9871-2e127bd8706d)
+
+ ![image](https://github.com/benedict04/pes_pd/assets/109859485/f0f2b79b-ba59-47b0-b9d2-45054766710b)
+
+#### enable buffer sizing 
+
+![image](https://github.com/benedict04/pes_pd/assets/109859485/815df172-7084-4bb7-9553-8f31a6c4b3d0)
+
+#### now run synthesis again
+
+### invoking magic to check layout
+
+![image](https://github.com/benedict04/pes_pd/assets/109859485/3a05b55c-d489-4c23-b28f-302cad00e612)

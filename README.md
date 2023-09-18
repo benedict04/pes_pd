@@ -172,3 +172,17 @@ The 16-mask CMOS process consists of the following steps:
 ![rr  Running  - Oracle VM VirtualBox 14-09-2023 17_35_03](https://github.com/benedict04/pes_pd/assets/109859485/6bf7379d-9c69-407e-96da-cf15d5bb4644)
 
 ![rr  Running  - Oracle VM VirtualBox 14-09-2023 17_45_27](https://github.com/benedict04/pes_pd/assets/109859485/c41199a6-4cee-40b2-96fa-0e50c53e9fdd)
+
+### Introduction to Magic Options and DRC rules
+**Magic**
++ Magic is a venerable VLSI layout tool, written in the 1980's at Berkeley by John Ousterhout, now famous primarily for writing the scripting interpreter language Tcl. 
++ Due largely in part to its liberal Berkeley open-source license, magic has remained popular with universities and small companies.
++ The open-source license has allowed VLSI engineers with a bent toward programming to implement clever ideas and help magic stay abreast of fabrication technology.
++ However, it is the well thought-out core algorithms which lend to magic the greatest part of its popularity.
++ Magic is widely cited as being the easiest tool to use for circuit layout, even for people who ultimately rely on commercial tools for their product design flow.
+
+**DRC rules**
++ DRC (Design Rule Check) rules are a set of guidelines and constraints used in the field of semiconductor and integrated circuit (IC) design to ensure that the physical layout of a chip or circuit adheres to the manufacturing process's design rules.
++ These rules are essential for maintaining manufacturability and ensuring that the final ICs can be fabricated without defects.
++ The design rules used by Magic's design rule checker come entirely from the technology file.
+

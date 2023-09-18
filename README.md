@@ -34,6 +34,8 @@
             2) Detailed routing : Uses Global routing guides to implement the actual wiring.
 - signoff : physical verifications such as DRC and LVS. Timing verifications such as Static Timimg Analysis.
 
+# DAY 2
+
 ## OpenLane
 
 ![image](https://github.com/benedict04/pes_pd/assets/109859485/03906a7e-f942-42ab-9118-aeaafdae8d2e)
@@ -121,6 +123,8 @@
 ![rr  Running  - Oracle VM VirtualBox 14-09-2023 15_12_08](https://github.com/benedict04/pes_pd/assets/109859485/bc62e2d7-4f02-43b5-b402-b88761f9d6ce)
 
 ![rr  Running  - Oracle VM VirtualBox 14-09-2023 15_14_26](https://github.com/benedict04/pes_pd/assets/109859485/ffc14c20-ea0e-4bc2-8eac-69b445c30f49)
+
+# DAY 3
 
 ## cell design flow
 

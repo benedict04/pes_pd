@@ -239,4 +239,6 @@ config.tcl
 
 ### invoking magic to check layout
 
+![image](https://github.com/benedict04/pes_pd/assets/109859485/c21f5eaa-a81b-4567-97ed-9ee18b9d6156)
+
 

@@ -38,11 +38,7 @@
             2) Detailed routing : Uses Global routing guides to implement the actual wiring.
 - signoff : physical verifications such as DRC and LVS. Timing verifications such as Static Timimg Analysis.
 
-</details>
 
-<details>
-<summary> DAY 2 </summary>
-<br>
 
 ## OpenLane
 
@@ -56,7 +52,11 @@
 
 ![image](https://github.com/benedict04/pes_pd/assets/109859485/e4dcfd8c-7d47-4560-a99e-e0fa14d57723)
 
-### calculating flop ratio
+</details>
+
+<details>
+<summary> DAY 2 </summary>
+<br>
 
 
 ## Utilization Factor and aspect ratio
@@ -81,6 +81,8 @@
 ![image](https://github.com/benedict04/pes_pd/assets/109859485/2c7130bb-22a9-4d54-900b-67f6dd3f540e)
 
 ## power planning
++ Power planning refers to the process of strategically managing and distributing electrical power within a circuit or system to ensure reliable and efficient operation.
++ Effective power planning is essential in modern electronics to meet performance, power consumption, and thermal constraints. 
 
 ![image](https://github.com/benedict04/pes_pd/assets/109859485/4b3556dc-3815-4f48-aa4d-a2358d3fee42)
 
@@ -93,6 +95,16 @@
 - multiple power supplies solves the problem of ground bounce and voltage drop.
 
 ## pin placement
+
+**Pin Placment**
++ Pin placement, also known as I/O (Input/Output) placement, is a crucial step in the physical design of an integrated circuit (IC).
++ It involves determining the locations and positions of input and output pins on the chip's package or die.
++ Proper pin placement is essential to ensure that the IC can interface with the external world effectively, meet performance requirements, and adhere to manufacturability constraints.
+
+**Logical Cell Placement Blockage**
++ Logical cell placement blockage, often referred to as blockage constraints or blockage regions, is a concept used in the physical design of integrated circuits (ICs).
++ Blockage constraints are used to restrict or reserve specific areas of the chip's layout for various purposes, such as accommodating specialized circuitry, ensuring signal integrity, or meeting manufacturing requirements.
+
 
 ![image](https://github.com/benedict04/pes_pd/assets/109859485/5eb4efd5-190c-414b-9c66-57e038168828)
 
@@ -139,11 +151,69 @@
 
 ## cell design flow
 
+
+**Inputs:**
++ PDKs (Process Design Kits):
+  - PDKs are essential resources provided by semiconductor foundries.
+  - They contain information about the fabrication process, including the available semiconductor technology, transistor models, and design rules.
+  - PDKs enable IC designers to create layouts and perform simulations that are compatible with the specific manufacturing process of the foundry.
+
++ DRC (Design Rule Checking) and LVS (Layout vs. Schematic) Rules:
+  - DRC rules are a set of guidelines that ensure that the physical layout of a chip adheres to the foundry's manufacturing process requirements.
+  - LVS rules ensure that the electrical characteristics of the layout match the intended schematic design.
+  - Both DRC and LVS checks are crucial for identifying and rectifying design errors and ensuring manufacturability and functionality.
+
++ SPICE Models:
+  - SPICE (Simulation Program with Integrated Circuit Emphasis) models are mathematical representations of electronic components (transistors, resistors, capacitors, etc.).
+  - They describe how these components behave electrically under different conditions.
+  - SPICE models are used for circuit simulation to analyze the performance of an IC design and predict its behavior.
+
++ Library:
+  - A library in IC design contains a collection of pre-designed, standardized components (e.g., logic gates, flip-flops, analog blocks) that can be used to build more complex circuits.
+  - Libraries save time and effort by providing readily available building blocks for designing ICs.
+  - Libraries often include SPICE models for each component, allowing for accurate simulation.
+
++ User-Defined Specifications:
+  - User-defined specifications are custom requirements and constraints set by the IC designer for a specific design project.
+  - These specifications can include performance goals (e.g., speed, power consumption), design constraints (e.g., area, power budget), and unique functionality requirements.
+  - User-defined specifications guide the entire IC design process, influencing choices made in terms of circuit design, layout, and simulation.
+
+
 ![image](https://github.com/benedict04/pes_pd/assets/109859485/d4782a48-dabc-4c21-8c39-c5f2b8ca84e1)
 
 ![image](https://github.com/benedict04/pes_pd/assets/109859485/361de1f0-68a4-4a83-81e2-aaf120ae127f)
 
 ## General timing characterisation
+
+
+**Slew Low Rise Threshold (slew_low_rise_thr):**
++ This parameter defines the minimum input signal slope (rate of change) required to trigger a rising transition in the output signal.
++ It helps characterize how fast an input signal must rise to initiate a change in the output signal from low to high.
+
+**Slew High Rise Threshold (slew_high_rise_thr):**
++ Similar to the slew_low_rise_thr, this parameter defines the minimum input signal slope required to trigger a rising transition in the output signal, but for signals that are already at a high logic level.
+
+**Slew Low Fall Threshold (slew_low_fall_thr):**
++ This parameter defines the minimum input signal slope required to trigger a falling transition in the output signal.
++ It specifies how fast an input signal must fall to initiate a change in the output signal from high to low.
+
+**Slew High Fall Threshold (slew_high_fall_thr):**
++ Like the slew_low_fall_thr, this parameter defines the minimum input signal slope required to trigger a falling transition in the output signal, but for signals that are already at a high logic level.
+
+**Input Rise Threshold (in_rise_thr):**
++ This parameter represents the threshold voltage level at which an input signal is considered to be transitioning from low to high.
++ It is essential for accurate timing analysis and helps determine when inputs trigger changes in the circuit.
+
+**Input Fall Threshold (in_fall_thr):**
++ Similar to in_rise_thr, this parameter represents the threshold voltage level at which an input signal is considered to be transitioning from high to low.
+
+**Output Rise Threshold (out_rise_thr):**
++ This parameter defines the threshold voltage level at which an output signal is considered to be transitioning from low to high.
++ It is used to specify the timing behavior of the circuit's outputs.
+
+**Output Fall Threshold (out_fall_thr):**
++ Similar to out_rise_thr, this parameter defines the threshold voltage level at which an output signal is considered to be transitioning from high to low.
+
 
 ![image](https://github.com/benedict04/pes_pd/assets/109859485/35685071-34b2-4886-a23f-8dc55988de23)
 
@@ -206,11 +276,41 @@ The 16-mask CMOS process consists of the following steps:
   <details>
  <summary> DAY 4 </summary>
 <br>
+
+ # Pre-layout timing analysis and importance of good clock tree
+## Timing modelling using delay tables
+### Extraction of LEF 
+Place and routing (PnR) is performed using an abstract view of the GDS files generated by Magic. The abstract information will include metal and pin information. The PnR tool will use the abstract view information, formally defined as LEF information, to perform interconnect routing in conjunction to routing guides generated from the PnR flow.
+
+- Technology LEF - Contains layer information, via information, and restricted DRC rules
+- Cell LEF - Abstract information of standard cells
+
+From PnR POV, We have to follow certain guidelines to get standard cell set
+1. Input and output ports must lie on the intersection of vertical and horizontal tracks
+2. Width of the standard cell should be odd multiples of the track pitch and height should be odd multiple of vertical track pitch
+
   ## LABS
 
-### convert std magic layout to std lef
+```
+li1 X 0.23 0.46
+li1 Y 0.17 0.34
+met1 X 0.17 0.34
+met1 Y 0.17 0.34
+met2 X 0.23 0.46
+met2 Y 0.23 0.46
+met3 X 0.34 0.68
+met3 Y 0.34 0.68
+met4 X 0.46 0.92
+met4 Y 0.46 0.92
+met5 X 1.70 3.40
+met5 Y 1.70 3.40
+```
 
 ![image](https://github.com/benedict04/pes_pd/assets/109859485/a2fd981b-e7c4-4107-b488-5a97a8495299)
+
++ In the tkcon window, type `save sky130_vsdinv.mag`.
++ This is to make our own .mag file.
++ `lef write` to make .lef file
 
 #### Setting grid values using above file info
 
@@ -254,6 +354,54 @@ config.tcl
 ### invoking magic to check layout
 
 ![image](https://github.com/benedict04/pes_pd/assets/109859485/c21f5eaa-a81b-4567-97ed-9ee18b9d6156)
+
+### Delay Tables
+**Introduction**
++ Delay tables, often referred to as delay models or delay tables in the context of digital integrated circuit design, are data structures that provide information about the propagation delay of digital logic gates or cells under various conditions.
++ These tables are a fundamental component of static timing analysis (STA) and are used to predict the signal arrival times and meet timing constraints in digital designs.
+
+**Purpose of Delay Tables:**
++ Delay tables are used to estimate the time it takes for a signal to propagate through a digital logic gate or cell.
++ This information is crucial for ensuring that signals meet their setup and hold time requirements and for calculating the overall timing behavior of a digital circuit.
+
+**Types of Delay Tables:**
++ There are two main types of delay tables:
+   - Library Delay Tables: These tables are part of a standard cell library and provide information about the delays of individual logic gates (AND, OR, XOR, flip-flops, 
+    etc.) under various operating conditions (input transitions, voltage, temperature, etc.). Library delay tables are used to estimate the delays associated with 
+    different gate types.
+   - Interconnect Delay Tables: These tables describe the delay associated with routing signals between logic gates or cells on a chip. They account for wire resistance, 
+   capacitance, and other physical properties that affect signal propagation.
+
+**Data in Delay Tables:**
++ Delay tables typically include information such as:
+   - Input conditions: Input transition times or slew rates.
+   - Process corners: Variations in process technology, including worst-case and best-case scenarios.
+   - Operating conditions: Voltage and temperature conditions.
+   - Delay values: Delays for signal propagation through the gate or interconnect, often specified for different output loading conditions.
+
+**Timing Analysis:**
++ Delay tables are used by STA tools to perform timing analysis on digital designs.
++ These tools use the delay tables to estimate the critical path delays, setup times, hold times, and other timing parameters.
+
+**Corner Analysis:**
++ Corner analysis involves using delay tables for various process corners (e.g., slow, typical, fast) to account for manufacturing process variations.
++ This ensures that the design meets timing under a range of conditions.
+
+**Clock Domain Crossing (CDC) Analysis:**
++ Delay tables are also used in CDC analysis to analyze signals that cross between different clock domains.
++ Understanding signal arrival times is crucial in preventing metastability issues.
+
+**Optimization:**
++ Designers use delay tables to optimize their designs by selecting gates with appropriate delays to meet performance, power, and area goals.
+
+**Iterative Process:**
++ During the design process, delay tables are used iteratively.
++ Designers may make adjustments to the design and rerun timing analysis to ensure that the design meets its timing constraints.
+
+## Clock tree synthesis TritonCTS and signal integrity
+### CTS
+- Run the command `run_cts` to run CTS
+- picorv32a.synthesis_cts.v is created 
 
 </details>
 

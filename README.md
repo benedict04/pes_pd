@@ -1,6 +1,10 @@
 # pes_pd
 
-## QFN-48 
+<details>
+<summary> DAY 1 </summary>
+<br>
+
+### QFN-48 
 
 ![image](https://github.com/benedict04/pes_pd/assets/109859485/07504a6e-13b3-47af-8c82-46640bf01c34)
 
@@ -34,7 +38,11 @@
             2) Detailed routing : Uses Global routing guides to implement the actual wiring.
 - signoff : physical verifications such as DRC and LVS. Timing verifications such as Static Timimg Analysis.
 
-# DAY 2
+</details>
+
+<details>
+<summary> DAY 2 </summary>
+<br>
 
 ## OpenLane
 
@@ -124,7 +132,10 @@
 
 ![rr  Running  - Oracle VM VirtualBox 14-09-2023 15_14_26](https://github.com/benedict04/pes_pd/assets/109859485/ffc14c20-ea0e-4bc2-8eac-69b445c30f49)
 
-# DAY 3
+</details>
+
+<details>
+<summary> DAY 3 </summary>
 
 ## cell design flow
 
@@ -190,8 +201,11 @@ The 16-mask CMOS process consists of the following steps:
 + These rules are essential for maintaining manufacturability and ensuring that the final ICs can be fabricated without defects.
 + The design rules used by Magic's design rule checker come entirely from the technology file.
 
-  # DAY 4
+</details>
 
+  <details>
+ <summary> DAY 4 </summary>
+<br>
   ## LABS
 
 ### convert std magic layout to std lef
@@ -241,7 +255,12 @@ config.tcl
 
 ![image](https://github.com/benedict04/pes_pd/assets/109859485/c21f5eaa-a81b-4567-97ed-9ee18b9d6156)
 
-# DAY 5
+</details>
+
+<details>
+<summary>DAY 5 </summary>
+<br>
+
 # Final steps for RTL2GDS using tritonRoute and openSTA
 ## Routing and design rule check (DRC)
 ### Maze routing
@@ -391,4 +410,5 @@ After the routing phase is completed in an EDA tool like TritonRoute, a set of f
 
 - **Routing Logs:** Detailed logs of the routing process, including any warnings or errors encountered.
 
+</details>
 
